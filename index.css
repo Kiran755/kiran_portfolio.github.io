@@ -1,0 +1,251 @@
+body{
+    padding:0;
+    margin:0;  
+    height:100vh;
+    width:100%;
+    background-color: black;
+   
+}
+#logo{
+    background-image: url("images/kiran1.jpg");
+    background-size: cover;
+    background-position: center;
+    transition:0.3s;
+}
+#logo:hover{
+    opacity:0.5;
+}
+.bg{
+     
+     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-image: url("images/Img7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    filter:blur(3px);
+    height:100%;
+    width:100%;
+   
+} 
+*{
+    box-sizing: border-box;  
+    font-family: 'Noto Sans JP', sans-serif;
+    color:white;
+}
+#main-container{
+    position: absolute;
+    top:0;
+    left:0;
+    /* height:100%; */
+    width:100%;
+}
+#nav{
+    /* border:1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border:1px solid black;
+    border-radius:3px;
+    box-shadow: 2px 2px 2px black;
+   /* background-image: linear-gradient(90deg, #E8E46E,#FFC107); */
+
+}
+#logo-container{
+     /* border:1px solid black;  */
+     border-radius:8px;
+    display: flex;
+    justify-content: space-around;
+    height:70px;
+    width:200px;
+    /* margin-left: 10px; */
+    cursor:pointer;
+}
+#logo-container:hover{
+    background: rgba( 255, 255, 255, 0.30 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+#logo{
+     width:70px; 
+    border:1px solid black;
+    border-radius: 50%;
+}
+.Btn{
+    height:50px;
+     margin:10px; 
+     padding:10px;
+     text-align: center;  
+    background-color:transparent;
+    border:#EBA83A;
+    border-radius:8px;
+    box-shadow: none;
+    font-size: 16px;
+    cursor:pointer;
+    transition: 0.3s;
+}
+.Btn i:hover{
+    color:black; 
+}
+.Btn:hover{
+    transform: scale(1.05);  
+    background: rgba( 255, 255, 255, 0.30 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.Btn i{
+    margin:3px;
+}
+#Main-Heading{
+  
+    height:100%;
+    text-align: center;
+}
+#Text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border:1px solid black; */
+    width: fit-content;
+    margin:160px auto;
+    background-color: transparent;
+    padding:15px;
+    transition:0.3s ease-in-out;
+    border-radius:12px;
+}
+#Text h1{
+    margin-bottom:0px;
+    cursor:default;
+}
+#Text h2{
+    margin-top:0px;
+    cursor:default;
+}
+
+#Text:hover
+{
+    background-color: rgba( 255, 255, 255, 0.02);
+    box-shadow:0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    /* backdrop-filter: blur( 4px ); */
+    border: 1px solid rgba(255, 255, 255, 0.589);
+    transform: scale(1.05); 
+}
+#button{
+    color:white;
+    width:fit-content;
+    margin:0 auto;
+    padding:10px;
+    background-color: black;
+    transition: 0.3s;
+    border:1px solid black;
+    box-shadow: none;
+    border-radius:6px;
+    font-weight:700;
+}
+#button:hover{
+    color:black;
+    background-color: white;
+    cursor:pointer;
+
+}
+#footer{
+    position:fixed;
+    bottom:0;
+    background-color: transparent;
+    font-weight: 600;
+    display: flex;
+    width:100%;
+    justify-content:space-between;
+    /* border:1px solid white; */
+}
+#footer h3{
+    margin:0;
+    font-size: 15px;
+}
+
+#copyright{
+    cursor:default;
+    padding-bottom:0;
+    /* border:1px solid white; */
+}
+#icons i {
+    padding:0 10px 0 10px;
+    cursor:pointer;
+    /* border:1px solid white; */
+    height:100%;
+    align-items: center;
+}
+#icons i:hover{
+    opacity: 0.5;
+}
+#Main-Heading h1::first-letter{
+    color:red;
+}
+#toggle-menu{
+    display: none;
+}
+.menu{
+    background-color: aquamarine;
+    position: absolute;
+    left:-100%;
+}
+
+@media screen and (max-width:370px)
+{
+    #footer h3{
+        font-size: 12px;
+    }
+    #icons i{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:720px)
+{
+    #nav{
+        display: flex;
+        flex-direction: column;
+    }
+    #logo-container{
+        display:flex;
+        justify-content: space-between;
+        border:1px solid white;
+        width:100%;
+    }
+    #Name{
+        display: inline-block;
+        flex:1;
+    }
+    #menu{
+        display: flex;
+        flex-direction: column;
+    }
+    #toggle-menu i{
+        margin:5px;
+        height:20px;
+        width:16px;
+        position:absolute;
+        right:0;
+        z-index:20;
+    }
+    #Text
+    {
+        margin:100px auto 300px;
+        width:90%;
+    }
+    #Text h1{
+        font-size: 24px;
+    }
+    #Text h2{
+        font-size:20px;
+    }
+    #toggle-menu{
+        flex:1;
+        display:block;
+        position:relative;
+    }
+
+  
+}
